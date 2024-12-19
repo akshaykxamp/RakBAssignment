@@ -1,0 +1,6 @@
+export const Colors = {
+  white: '#FFFFFF',
+  black: '#000000',
+  green: `#00FF00`,
+  blue: `#531df2`,
+};

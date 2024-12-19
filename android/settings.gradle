@@ -4,3 +4,6 @@ extensions.configure(com.facebook.react.ReactSettingsExtension){ ex -> ex.autoli
 rootProject.name = 'RakBank'
 include ':app'
 includeBuild('../node_modules/@react-native/gradle-plugin')
+include ':screenshot-control-by-akshay'
+project(':screenshot-control-by-akshay').projectDir = new File(rootProject.projectDir, '../node_modules/screenshot-control-by-akshay/android')
+
