@@ -8,9 +8,7 @@ export const updateData = async (url:string, data:DeviceInfo) => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
       });
-  
-      if (!response.ok) throw new Error(`Status: ${response.status}`);
-      return await response.json();
+        return await response.json();
     } catch (error) {
       console.error('Error updating data:', error);
       throw error;

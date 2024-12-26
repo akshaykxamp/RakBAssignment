@@ -10,6 +10,7 @@ interface ActivateButtonProps {
 
 const ActivateButton = (props: ActivateButtonProps) => {
     let {isActivate=false,onPress} = props
+    const [ isChecked, setIsChecked] = React.useState(false)
   return (
 
     <Pressable onPress={onPress}>
@@ -21,6 +22,7 @@ const ActivateButton = (props: ActivateButtonProps) => {
                 resizeMode="contain"
               />
     </View>
+
     <Text style={[styles.buttonTitle,{color: Colors.white}]}>{isActivate ? Constants.Activated : Constants.Activate}</Text>
     </View>
     </Pressable>
